@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #d64045;
+  border-bottom: 2px solid #000;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  margin-left: 10px;
+  margin-top: 6px;
+}
+
+.header img {
+  width: 60px;
+  height: 60px;
+}
+
+.container.m-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#botoes_paginacao {
+  margin-left: 15%;
+}
+
+#pokemons_div {
+  margin-left: 18%;
+}

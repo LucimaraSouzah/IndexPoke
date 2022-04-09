@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- CDN -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap/bootstrap.css" />
+    <script src="bootstrap/bootstrap.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <img src="https://img.icons8.com/color/48/000000/pokeball--v1.png" />
+      <h1 class="title">Pokédex</h1>
+    </header>
+    <div class="container m-1">
+      <div id="botoes_paginacao"></div>
+
+      <div id="pokemons_div">
+        <img
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+        />
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="nome_pokemon">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body" id="conteudo_pokemon">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
